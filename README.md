@@ -15,8 +15,8 @@
 
 ### Operations
 
-- [] Operations (기본 연산자) [바로가기](www.naver.com)
-- [] Operations (비교 연산자) [바로가기](www.naver.com)
+- [x] Operations (기본 연산자) [바로가기](www.naver.com)
+- [x] Operations (비교 연산자) [바로가기](www.naver.com)
 
 
 

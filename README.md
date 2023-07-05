@@ -8,10 +8,17 @@
 
 ### Basic
 - [x] Code Structure [바로가기](www.naver.com)
-- [ ] Variable [바로가기](www.naver.com)
-- [ ] Strict Mode [바로가기](www.naver.com)
-- [ ] Data Types [바로가기](www.naver.com)
-- [ ] Type Conversion [바로가기](www.naver.com)
+- [x] Variable [바로가기](www.naver.com)
+- [x] Strict Mode [바로가기](www.naver.com)
+- [x] Data Types [바로가기](www.naver.com)
+- [x] Type Conversion [바로가기](www.naver.com)
+
+### Operations
+
+- [] Operations (기본 연산자) [바로가기](www.naver.com)
+- [] Operations (비교 연산자) [바로가기](www.naver.com)
+
+
 
 
 

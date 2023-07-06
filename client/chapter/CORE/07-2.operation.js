@@ -24,7 +24,6 @@ let inequal = number[2] != number[3];
 // 동일(똑같다) → boolean
 let same =  number[3] === number[4];
 
-
 // 문자 비교
 // 사전편집(lexicographical) 순
 // 사전 뒤쪽의 문자가 앞쪽의 문자보다 크다고 판단
@@ -44,3 +43,19 @@ let same =  number[3] === number[4];
 
 // console.log('Design' <= 'Development');
 // console.log('디자인' <= '개발');
+
+
+
+
+
+
+
+
+// let age =  prompt('나이를 말해주세요', 18);
+
+// let message = (age < 3) ? '안녕꼬맹이' : (age < 18) ? '그래도 꼬맹이' : (age < 50) ? '어르신' : '애매하게입력하셨네요';
+
+// alert(message);
+
+
+

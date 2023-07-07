@@ -76,14 +76,14 @@ const frontEndDev = [
 // while 문 (역순환 : 역방향)
 
 // let z1 = performance.now();
-// let l = frontEndDev.length;
+// let l = frontEndDev.length - 1;
 
 // while(l > 0){
 
 //   let value = frontEndDev[l];
-// console.log(value);
 
-  // l--;
+//   console.log(value);
+//   l--;
 // }
 
 // let z2 = performance.now()
@@ -99,10 +99,10 @@ const frontEndDev = [
 
 // let copyArray = frontEndDev.slice();   // old 
 
-let copyArray = [...frontEndDev]; // new
+// let copyArray = [...frontEndDev]; // new
 
 
-while(frontEndDev.length) {
+// while(frontEndDev.length) {
 
-  console.log(frontEndDev.shift());   // pop 뒤 shift 앞
-}
+//   console.log(frontEndDev.shift());   // pop 뒤 shift 앞
+// }

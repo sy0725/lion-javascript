@@ -53,20 +53,20 @@ authUser = {
   permission: 'paid', // free | paid
 };
 
-// console.log(authUser);
+console.log(authUser);
 
 // 점(.) 표기법
 // authUser 객체의 프로퍼티에 접근해 Console에 출력해봅니다.
 
-// console.log(authUser.permission);
-// console.log(authUser.name);
+console.log(authUser.permission);
+console.log(authUser.name);
 
 // 대괄호([]) 표기법
 // 유료 사용자 권한(paid User Rights) 이름으로 프로퍼티를 재정의하고
 // 대괄호 표기법을 사용해 접근 Console에 출력해봅니다.
 
-// console.log(authUser['uid']);
-// console.log(authUser['name']);
+console.log(authUser['uid']);
+console.log(authUser['name']);
 
 // 계산된 프로퍼티 (computed property)
 let calculateProperty = 'phone'; // phone | tel
@@ -128,70 +128,70 @@ let keyArray = Object.keys(authUser);
 let valueArray = Object.values(authUser);
 
 
-// getProp(object)
+getProp(object)
 
-// function getProp(object){
-//     if(typeof object !== 'object'){
-//       throw new Error('getProp함수의 매개변수는 객체 타입 이어야 합니다')
-//     }
-//     return object.key(object)
-// }
-
-
-// function getP(object){
-//   let result = [];
-
-//   for(let key in object){
-//     if(({}).hasOwnProperty.call(object,key)){
-//       result.push(key)
-//     }
-//   }
-
-//   return result;
-// }
-
-// console.log(getProp(authUser));
-
-// console.log(keyArray);
-
-//            null            없앰.
-// 프로퍼티 제거(remove) or 삭제(delete)
+function getProp(object){
+    if(typeof object !== 'object'){
+      throw new Error('getProp함수의 매개변수는 객체 타입 이어야 합니다')
+    }
+    return object.key(object)
+}
 
 
-// authUser.name = null;
+function getP(object){
+  let result = [];
 
-// delete authUser.uid
+  for(let key in object){
+    if(({}).hasOwnProperty.call(object,key)){
+      result.push(key)
+    }
+  }
 
-// removeProperty(authUser,name);
+  return result;
+}
 
-// object.removeProperty(authUser);
+console.log(getProp(authUser));
 
-// removeProperty
+console.log(keyArray);
 
-// function removeProperty(object, key){
+           null            없앰.
+프로퍼티 제거(remove) or 삭제(delete)
 
-//   if(typeof object !== 'object'){
-//     throw new Error('....')
-//   }
 
-//   if(typeof object !== 'string'){
-//     throw new Error('....')
-//   }
+authUser.name = null;
 
-//   if(key === 'all'){
-//     for(let key of getProp(object)){
-//       object[key] = null;
-//     }
+delete authUser.uid
 
-//     return object;
-//   }
+removeProperty(authUser,name);
 
-// object[key] = null;
+object.removeProperty(authUser);
 
-// return object;
-// }
+removeProperty
 
-//  deleteProperty
+function removeProperty(object, key){
+
+  if(typeof object !== 'object'){
+    throw new Error('....')
+  }
+
+  if(typeof object !== 'string'){
+    throw new Error('....')
+  }
+
+  if(key === 'all'){
+    for(let key of getProp(object)){
+      object[key] = null;
+    }
+
+    return object;
+  }
+
+object[key] = null;
+
+return object;
+}
+
+ deleteProperty
 
 function deleteProperty(object, key){
 

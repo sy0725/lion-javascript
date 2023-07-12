@@ -22,13 +22,13 @@ function calcPrice(
   priceD = getRandomValue()
 ){
 
-  // priceC ||= 10;
-  // priceC ??= 10;
+  priceC ||= 10;
+  priceC ??= 10;
 
-  // if(!priceC) priceC = 0;
-  // if(typeof priceC === 'undefined'){
-  //   priceC = 0;
-  // }
+  if(!priceC) priceC = 0;
+  if(typeof priceC === 'undefined'){
+    priceC = 0;
+  }
 
   if(!priceA || !priceB){
     throw new Error('calcPrice 함수의 첫 번째와 두 번째 매개변수는 필수 입력 값 입니다.');

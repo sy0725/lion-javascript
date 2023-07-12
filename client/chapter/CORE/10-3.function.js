@@ -10,26 +10,26 @@ let resultX = calculateTotal(10000, 8900, 1360, 2100);
 let resultY = calculateTotal(21500, 3200, 9800, 4700);
 let resultZ = calculateTotal(9000, -2500, 5000, 11900);
 
-//   console.log(resultX);
-//   console.log(resultY);
-//   console.log(resultZ);
+  console.log(resultX);
+  console.log(resultY);
+  console.log(resultZ);
 
 // 함수 선언 → 화살표 함수 (표현)식  , ...args : rest parameter   arrow
 let calcAllMoney = (a, b, ...args) => {
-  //    console.log(args);
+     console.log(args);
 
-  //    let total = 0;
-  //    args.forEach((item) => {
-  //    total += item
-  // })
+     let total = 0;
+     args.forEach((item) => {
+     total += item
+  })
 
-  // return args.reduce(function(acc, item){
-  //  return acc + item;
-  // },0)
+  return args.reduce(function(acc, item){
+   return acc + item;
+  },0)
 
   return args.reduce((acc, item) => acc + item, 0);
 
-  //    return total;
+     return total;
 };
 
 const result = calcAllMoney(1000, 500, 200, 2000);

@@ -193,7 +193,15 @@ const toSpliced = arr.toSpliced(2,0, 'javascript','css','react');
 //     `
 //   })
   
+// 피플 자료구조에서 나이만 모아놓은 배열ㅇ ㅣ필요하다 => 가공처리 나이 -1 내보내고 싶다.
+
+const newAge = people.map((item) => {
+ return item.age - 1;
+})
   
+console.log(newAge);
+
+
 //   job.forEach((item)=>{
 //     document.body.insertAdjacentHTML('beforeend',item);
 //   })

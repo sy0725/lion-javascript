@@ -165,35 +165,35 @@ const toReversed = arr.toReversed();
 const toSpliced = arr.toSpliced(2,0, 'javascript','css','react');
 // console.log(toSpliced);
 
-// map : 진짜 중요 / 일단 배열을 받아서 새로운 배열을 반환하는데 focus 가 맞춰져있다. map이랑 filter 는 꼭 알아야한다. 원하는 항목을 내보낼때 map이라는걸 사용할 수 있다.
+map : 진짜 중요 / 일단 배열을 받아서 새로운 배열을 반환하는데 focus 가 맞춰져있다. map이랑 filter 는 꼭 알아야한다. 원하는 항목을 내보낼때 map이라는걸 사용할 수 있다. map 함수는 return 이 있다.
 
 
-// const job = people.map((item,index)=>{
-//     return `<div>${item.profession}</div>`
-//   })
+const job = people.map((item,index)=>{
+    return `<div>${item.profession}</div>`
+  })
   
-// job.forEach((item) =>{
-//     document.body.insertAdjacentHTML('beforeend', item);
-// })
+job.forEach((item) =>{
+    document.body.insertAdjacentHTML('beforeend', item);
+})
   
 
-//   console.log(job);
+  console.log(job);
 
-//  정말중요 코드보고 한번 익혀보는 시간을 가지도록하자
-//   const job = people.map((item,index)=>{
-//     return /* html */`
-//       <div class="userCard">
-//         <div class="imageField">
-//           <img src="${item.imageSrc}" alt="" />
-//         </div>
-//         <span>이름:${item.name}</span>
-//         <span>직업:${item.profession}</span>
-//         <span>나이:${item.age}</span>
-//       </div>
-//     `
-//   })
+ 정말중요 코드보고 한번 익혀보는 시간을 가지도록하자
+  const job = people.map((item,index)=>{
+    return /* html */`
+      <div class="userCard">
+        <div class="imageField">
+          <img src="${item.imageSrc}" alt="" />
+        </div>
+        <span>이름:${item.name}</span>
+        <span>직업:${item.profession}</span>
+        <span>나이:${item.age}</span>
+      </div>
+    `
+  })
   
-// 피플 자료구조에서 나이만 모아놓은 배열ㅇ ㅣ필요하다 => 가공처리 나이 -1 내보내고 싶다.
+피플 자료구조에서 나이만 모아놓은 배열ㅇ ㅣ필요하다 => 가공처리 나이 -1 내보내고 싶다.
 
 const newAge = people.map((item) => {
  return item.age - 1;
@@ -296,3 +296,6 @@ const stringToArray = str.split(' ')
 const arrayToString = stringToArray.join('/')
 
 // console.log(arrayToString);
+
+
+

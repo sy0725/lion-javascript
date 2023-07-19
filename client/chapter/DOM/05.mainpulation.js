@@ -113,8 +113,6 @@ todoList.forEach((item) => {
 
 
 
-
-
 insertLast('.todo' , '<li>문자하기</li>')
 
 

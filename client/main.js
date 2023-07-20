@@ -1,5 +1,7 @@
-console.log('hello js');
+getNode
+import { getNode } from './lib/dom/getNode';
 
-const a = 10;
 
-const b = 10;
+
+
+
